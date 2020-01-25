@@ -1,0 +1,271 @@
+/* -----------------------BASIC SETTINGS--------------------------- */
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 10px;
+}
+
+body{
+    background-color: #fff;
+}
+
+/* ----------------------HEADER STYLES---------------------------- */
+
+header{
+    width:100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #000;
+}
+
+header p{
+    font-size: 60rem;
+    line-height: 100vh;
+    color:white;
+}
+
+/* -------------------NAV STYLES------------------------- */
+
+nav{
+    z-index: 1!important;
+    position: fixed;
+    top:10px;
+    left:50%;
+    transform: translateX(-50%);
+    mix-blend-mode: difference;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    position: relative;
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0 20px;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+nav ul li a span{
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background: #fff;
+    bottom: 0;
+    left:-100%;
+    transition: .3s;
+}
+
+nav ul li a:hover span{
+    left:0;
+}
+
+/* ---------------------------------------SECTION WITH SPORT QUIZ--------------------------- */
+
+section.sport{
+    width:100%;
+    background-color: #fff;
+}
+
+section.sport div.wrapSport{
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.sport div.wrapSport div.sign{
+    flex-basis: 25%;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section.sport div.wrapSport div.sign img{
+    width:250px;
+    height: 150px;
+    display: block;
+    margin:0 auto;
+}
+
+section.sport div.wrapSport div.description{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.sport div.wrapSport div.description p{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+section.sport div.wrapSport div.description button.sportStart{
+    width:150px;
+    height: 70px;
+    font-size: 3rem;
+    color:black;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.sport div.wrapSport div.description button.sportStart:hover{
+    font-size: 4rem;
+}
+
+/* -------------------------------------------------SECTION WITH MUSIC QUIZ-------------------------------- */
+
+section.music{
+    width:100%;
+    background-color: #fff;
+}
+
+section.music div.wrapMusic{
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+section.music div.wrapMusic div.sign{
+    flex-basis: 25%;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section.music div.wrapMusic div.sign img{
+    width:250px;
+    height: 150px;
+    display: block;
+    margin:0 auto;
+}
+
+section.music div.wrapMusic div.description{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.music div.wrapMusic div.description p{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+section.music div.wrapMusic div.description button.musicStart{
+    width:150px;
+    height: 70px;
+    font-size: 3rem;
+    color:black;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.music div.wrapMusic div.description button.musicStart:hover{
+    font-size: 4rem;
+}
+
+
+/* ------------------------------SECTION WITH HISTORY QUIZ--------------------------- */
+
+section.history{
+    width:100%;
+    background-color: #fff;
+}
+
+section.history div.wrapHistory{
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.history div.wrapHistory div.sign{
+    flex-basis: 25%;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section.history div.wrapHistory div.sign img{
+    width:250px;
+    height: 150px;
+    display: block;
+    margin:0 auto;
+}
+
+section.history div.wrapHistory div.description{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.history div.wrapHistory div.description p{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+section.history div.wrapHistory div.description button.historyStart{
+    width:150px;
+    height: 70px;
+    font-size: 3rem;
+    color:black;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.history div.wrapHistory div.description button.historyStart:hover{
+    font-size: 4rem;
+}
+
+
+
+/* ---------------------FOOTER--------------------- */  
+
+footer{
+    width:100%;
+    height: 30px;
+    background-color: #000;
+    color:white;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 30px;
+}
