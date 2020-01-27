@@ -1,3 +1,10 @@
+
+/* <i class="fas fa-chevron-left"></i> */
+/* <i class="fas fa-chevron-right"></i> */
+/* <i class="fas fa-times"></i> */
+
+
+
 /* -----------------------BASIC SETTINGS--------------------------- */
 
 
@@ -16,6 +23,10 @@ body{
     background-color: #fff;
 }
 
+section{
+    border-bottom: 2px solid black;
+}
+
 /* ----------------------HEADER STYLES---------------------------- */
 
 header{
@@ -26,7 +37,7 @@ header{
 }
 
 header p{
-    font-size: 60rem;
+    font-size: 70rem;
     line-height: 100vh;
     color:white;
 }
@@ -35,7 +46,7 @@ header p{
 
 nav{
     z-index: 1!important;
-    position: fixed;
+    position:fixed;
     top:10px;
     left:50%;
     transform: translateX(-50%);
@@ -133,7 +144,7 @@ section.sport div.wrapSport div.description button.sportStart{
 }
 
 section.sport div.wrapSport div.description button.sportStart:hover{
-    font-size: 4rem;
+    font-size: 3.8rem;
 }
 
 /* -------------------------------------------------SECTION WITH MUSIC QUIZ-------------------------------- */
@@ -193,7 +204,7 @@ section.music div.wrapMusic div.description button.musicStart{
 }
 
 section.music div.wrapMusic div.description button.musicStart:hover{
-    font-size: 4rem;
+    font-size: 3.8rem;
 }
 
 
@@ -253,9 +264,511 @@ section.history div.wrapHistory div.description button.historyStart{
 }
 
 section.history div.wrapHistory div.description button.historyStart:hover{
-    font-size: 4rem;
+    font-size: 3.8rem;
 }
 
+/* -----------------------------SPORT QUIZ------------------------ */
+
+section.sportQuiz{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-color: #fff;
+    z-index: 3!important;
+    display: block;
+}
+
+section.sportQuiz i:nth-of-type(1){
+    position: absolute;
+    top:5%;
+    right: 5%;
+    font-size: 6rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s;
+    transform: translate(-5%,-5%);
+}
+
+
+section.sportQuiz i:nth-of-type(2){
+    position: absolute;
+    top:50%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s;
+}
+
+section.sportQuiz i:nth-of-type(3){
+    position: absolute;
+    top:50%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s;
+}
+
+section.sportQuiz i:hover{
+    opacity: 1;
+}
+
+section.sportQuiz div.welcome{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+section.sportQuiz div.welcome p.welcomeText{
+    font-size: 3rem;
+}
+
+section.sportQuiz div.welcome button.startSportQuiz{
+    font-size: 3rem;
+    padding: 15px 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.sportQuiz div.welcome button.startSportQuiz:hover{
+    color:white;
+    background-color: #000;
+}
+
+section.sportQuiz div.wrap{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+}
+
+section.sportQuiz div.wrap.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sportQuiz div.wrap p.question{
+    font-size: 3rem;
+
+}
+
+section.sportQuiz div.wrap label{
+    margin-top: 30px;
+    font-size: 3rem;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width:700px;
+    height: 70px;
+}
+
+section.sportQuiz div.wrap label input{
+    margin-right: 30px;
+    width:20px;
+    height: 20px;
+    border:1px solid black;
+    background-color: #fff;
+}
+
+section.sportQuiz div.wrap.active button.finish{
+    margin-top:50px;
+    font-size: 4rem;
+    padding: 15px 25px;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.sportQuiz div.wrap.active button.finish:hover{
+    background-color: #000;
+    color:white;
+}
+
+section.sportQuiz div.result{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+section.sportQuiz div.result p{
+    font-size: 4rem;
+    text-align: center;
+}
+
+section.sportQuiz div.result button.endQuiz{
+    margin-top:50px;
+    font-size: 5rem;
+    padding: 15px 25px;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.sportQuiz div.result button.endQuiz:hover{
+    background-color: #000;
+    color:white;
+}
+
+/* -----------------------------MUSIC QUIZ---------------- */
+
+section.musicQuiz{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-color: #fff;
+    z-index: 3!important;
+    display: block;
+}
+
+section.musicQuiz i:nth-of-type(1){
+    position: absolute;
+    top:5%;
+    right: 5%;
+    font-size: 6rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s;
+    transform: translate(-5%,-5%);
+}
+
+
+section.musicQuiz i:nth-of-type(2){
+    position: absolute;
+    top:50%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s;
+}
+
+section.musicQuiz i:nth-of-type(3){
+    position: absolute;
+    top:50%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s;
+}
+
+section.musicQuiz i:hover{
+    opacity: 1;
+}
+
+section.musicQuiz div.welcome{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+section.musicQuiz div.welcome p.welcomeText{
+    font-size: 3rem;
+}
+
+section.musicQuiz div.welcome button.startMusicQuiz{
+    font-size: 3rem;
+    padding: 15px 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.musicQuiz div.welcome button.startMusicQuiz:hover{
+    color:white;
+    background-color: #000;
+}
+
+section.musicQuiz div.wrap{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+}
+
+section.musicQuiz div.wrap.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.musicQuiz div.wrap p.question{
+    font-size: 3rem;
+
+}
+
+section.musicQuiz div.wrap label{
+    margin-top: 30px;
+    font-size: 3rem;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width:700px;
+    height: 70px;
+}
+
+section.musicQuiz div.wrap label input{
+    margin-right: 30px;
+    width:20px;
+    height: 20px;
+    border:1px solid black;
+    background-color: #fff;
+}
+
+section.musicQuiz div.wrap.active button.finish{
+    margin-top:50px;
+    font-size: 4rem;
+    padding: 15px 25px;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.musicQuiz div.wrap.active button.finish:hover{
+    background-color: #000;
+    color:white;
+}
+
+section.musicQuiz div.result{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+section.musicQuiz div.result p{
+    font-size: 4rem;
+    text-align: center;
+}
+
+section.musicQuiz div.result button.endQuiz{
+    margin-top:50px;
+    font-size: 5rem;
+    padding: 15px 25px;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.musicQuiz div.result button.endQuiz:hover{
+    background-color: #000;
+    color:white;
+}
+/* -----------------------------------HISTORY QUIZ------------------------- */
+
+section.historyQuiz{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-color: #fff;
+    z-index: 3!important;
+    display: block;
+}
+
+section.historyQuiz i:nth-of-type(1){
+    position: absolute;
+    top:5%;
+    right: 5%;
+    font-size: 6rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s;
+    transform: translate(-5%,-5%);
+}
+
+
+section.historyQuiz i:nth-of-type(2){
+    position: absolute;
+    top:50%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s;
+}
+
+section.historyQuiz i:nth-of-type(3){
+    position: absolute;
+    top:50%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s;
+}
+
+section.historyQuiz i:hover{
+    opacity: 1;
+}
+
+section.historyQuiz div.welcome{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+section.historyQuiz div.welcome p.welcomeText{
+    font-size: 3rem;
+}
+
+section.historyQuiz div.welcome button.startHistoryQuiz{
+    font-size: 3rem;
+    padding: 15px 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.historyQuiz div.welcome button.startHistoryQuiz:hover{
+    color:white;
+    background-color: #000;
+}
+
+section.historyQuiz div.wrap{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+}
+
+section.historyQuiz div.wrap.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.historyQuiz div.wrap p.question{
+    font-size: 3rem;
+
+}
+
+section.historyQuiz div.wrap label{
+    margin-top: 30px;
+    font-size: 3rem;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width:700px;
+    height: 70px;
+}
+
+section.historyQuiz div.wrap label input{
+    margin-right: 30px;
+    width:20px;
+    height: 20px;
+    border:1px solid black;
+    background-color: #fff;
+}
+
+section.historyQuiz div.wrap.active button.finish{
+    margin-top:50px;
+    font-size: 4rem;
+    padding: 15px 25px;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.historyQuiz div.wrap.active button.finish:hover{
+    background-color: #000;
+    color:white;
+}
+
+section.historyQuiz div.result{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+section.historyQuiz div.result p{
+    font-size: 4rem;
+    text-align: center;
+}
+
+section.historyQuiz div.result button.endQuiz{
+    margin-top:50px;
+    font-size: 5rem;
+    padding: 15px 25px;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.historyQuiz div.result button.endQuiz:hover{
+    background-color: #000;
+    color:white;
+}
 
 
 /* ---------------------FOOTER--------------------- */  
