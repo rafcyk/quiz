@@ -412,11 +412,11 @@ section.sportQuiz div.result{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    text-align: center;
 }
 
 section.sportQuiz div.result p{
     font-size: 4rem;
-    text-align: center;
 }
 
 section.sportQuiz div.result button.endQuiz{
@@ -580,11 +580,11 @@ section.musicQuiz div.result{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    text-align: center;
 }
 
 section.musicQuiz div.result p{
     font-size: 4rem;
-    text-align: center;
 }
 
 section.musicQuiz div.result button.endQuiz{
@@ -701,7 +701,6 @@ section.historyQuiz div.wrap.active{
 
 section.historyQuiz div.wrap p.question{
     font-size: 3rem;
-
 }
 
 section.historyQuiz div.wrap label{
@@ -747,11 +746,11 @@ section.historyQuiz div.result{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    text-align: center;
 }
 
 section.historyQuiz div.result p{
     font-size: 4rem;
-    text-align: center;
 }
 
 section.historyQuiz div.result button.endQuiz{
@@ -781,4 +780,505 @@ footer{
     font-size: 1.5rem;
     text-align: center;
     line-height: 30px;
+}
+
+
+/* ----------------------MEDIA QUERIES------------------- */
+
+@media only screen and (max-width:1200px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+
+    html{
+        font-size: 8px;
+    }
+
+    section.historyQuiz div.wrap label{
+        margin-top: 30px;
+        font-size: 3rem;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        width:600px;
+        height: 65px;
+    }
+
+    section.musicQuiz div.wrap label{
+        margin-top: 30px;
+        font-size: 3rem;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        width:600px;
+        height: 65px;
+    }
+
+    section.sportQuiz div.wrap label{
+        margin-top: 30px;
+        font-size: 3rem;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        width:600px;
+        height: 65px;
+    }
+
+
+}
+
+@media only screen and (max-width:800px){
+
+    html{
+        font-size: 7px;
+    }
+
+    
+    section.history div.wrapHistory div.sign{
+        flex-basis: 25%;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    section.history div.wrapHistory div.sign img{
+        width:200px;
+        height: 120px;
+        display: block;
+        margin:0 auto;
+    }
+    
+    
+    
+    section.history div.wrapHistory div.description button.historyStart{
+        width:100px;
+        height: 50px;
+    }
+
+    section.music div.wrapMusic div.sign{
+        flex-basis: 25%;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    section.music div.wrapMusic div.sign img{
+        width:200px;
+        height: 120px;
+        display: block;
+        margin:0 auto;
+    }
+    
+    
+    
+    section.music div.wrapMusic div.description button.musicStart{
+        width:100px;
+        height: 50px;
+    }
+
+    section.sport div.wrapSportsport div.sign{
+        flex-basis: 25%;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    section.sport div.wrapSportsport div.sign img{
+        width:200px;
+        height: 120px;
+        display: block;
+        margin:0 auto;
+    }
+    
+    
+    
+    section.sport div.wrapSport div.description button.sportStart{
+        width:100px;
+        height: 50px;
+    }
+
+    section.historyQuiz div.wrap label{
+        width:500px;
+        height: 50px;
+    }
+
+    section.musicQuiz div.wrap label{
+        width:500px;
+        height: 50px;
+    }
+
+    section.sportQuiz div.wrap label{
+        width:500px;
+        height: 50px;
+    }
+
+    section.historyQuiz div.wrap.active button.finish{
+        margin-top:30px;
+        padding: 10px 20px;
+    }
+
+    section.musicQuiz div.wrap.active button.finish{
+        margin-top:30px;
+        padding: 10px 20px;
+    }
+
+    section.sportQuiz div.wrap.active button.finish{
+        margin-top:30px;
+        padding: 10px 20px;
+    }
+
+    section.historyQuiz div.result button.endQuiz{
+        margin-top:30px;
+        padding: 10px 20px;
+        font-size: 4rem;
+    }
+
+    section.musicQuiz div.result button.endQuiz{
+        margin-top:30px;
+        padding: 10px 20px;
+        font-size: 4rem;
+    }
+
+    section.sportQuiz div.result button.endQuiz{
+        margin-top:30px;
+        padding: 10px 20px;
+        font-size: 4rem;
+    }
+
+}
+
+
+@media only screen and (max-width:700px){
+
+    html{
+        font-size: 7px;
+    }
+
+    header p{
+        font-size: 55rem;
+    }
+
+    
+
+    
+    section.history div.wrapHistory div.sign img{
+        width:150px;
+        height: 80px;
+        display: block;
+        margin:0 auto;
+    }
+    
+    
+    
+    section.history div.wrapHistory div.description button.historyStart{
+        width:100px;
+        height: 50px;
+    }
+
+    section.music div.wrapMusic div.sign img{
+        width:150px;
+        height: 80px;
+        display: block;
+        margin:0 auto;
+    }
+    
+    
+    
+    section.music div.wrapMusic div.description button.musicStart{
+        width:100px;
+        height: 50px;
+    }
+    
+    section.sport div.wrapSport div.sign img{
+        width:150px;
+        height: 80px;
+        display: block;
+        margin:0 auto;
+    }
+    
+    
+    
+    section.sport div.wrapSport div.description button.sportStart{
+        width:100px;
+        height: 50px;
+    }
+
+    section.historyQuiz div.wrap label{
+        width:500px;
+        height: 50px;
+    }
+
+    section.musicQuiz div.wrap label{
+        width:500px;
+        height: 50px;
+    }
+
+    section.sportQuiz div.wrap label{
+        width:500px;
+        height: 50px;
+    }
+
+    section.historyQuiz div.wrap.active button.finish{
+        margin-top:30px;
+        padding: 5px 10px;
+    }
+
+    section.musicQuiz div.wrap.active button.finish{
+        margin-top:30px;
+        padding: 5px 10px;
+    }
+
+    section.sportQuiz div.wrap.active button.finish{
+        margin-top:30px;
+        padding: 5px 10px;
+    }
+
+    section.historyQuiz div.result button.endQuiz{
+        margin-top:30px;
+        padding: 10px 20px;
+        font-size: 4rem;
+    }
+
+    section.musicQuiz div.result button.endQuiz{
+        margin-top:30px;
+        padding: 10px 20px;
+        font-size: 4rem;
+    }
+
+    section.sportQuiz div.result button.endQuiz{
+        margin-top:30px;
+        padding: 10px 20px;
+        font-size: 4rem;
+    }
+
+}
+
+@media only screen and (max-width:600px){
+
+    html{
+        font-size: 6px;
+    }
+
+    header p{
+        font-size: 50rem;
+    }
+
+    section.history div.wrapHistory{
+        margin: 0 auto;
+        padding: 50px 0 50px 0;
+        width:80%;
+        flex-direction: column;
+    }
+
+    section.history div.wrapHistory div.sign{
+        margin-bottom: 30px;
+    }
+    
+    
+    section.history div.wrapHistory div.sign img{
+        width:150px;
+        height: 70px;
+    }
+    
+    
+    
+    section.history div.wrapHistory div.description button.historyStart{
+        width:100px;
+        height: 40px;
+        margin-top: 30px;
+    }
+
+    section.music div.wrapMusic{
+        padding: 50px 0 50px 0;
+        flex-direction: column-reverse;
+    }
+
+    section.music div.wrapMusic div.sign{
+        margin-bottom: 30px;
+    }
+    
+    
+    section.music div.wrapMusic div.sign img{
+        width:150px;
+        height: 70px;
+    }
+    
+    
+    
+    section.music div.wrapMusic div.description button.musicStart{
+        width:100px;
+        height: 40px;
+        margin-top: 30px;
+    }
+
+
+    section.sport div.wrapSport{
+        margin: 0 auto;
+        padding: 50px 0 50px 0;
+        width:80%;
+        flex-direction: column;
+    }
+
+    section.sport div.wrapSport div.sign{
+        margin-bottom: 30px;
+    }
+    
+    
+    section.sport div.wrapSport div.sign img{
+        width:150px;
+        height: 70px;
+    }
+    
+    
+    
+    
+    section.sport div.wrapSport div.description button.sportStart{
+        width:100px;
+        height: 40px;
+        margin-top: 30px;
+    }
+
+    section.historyQuiz div.welcome button.startHistoryQuiz{
+        padding: 5px 12px;
+        margin-top: 20px;
+    }
+
+    section.musicQuiz div.welcome button.startMusicQuiz{
+        padding: 5px 12px;
+        margin-top: 20px;
+    }
+
+    section.sportQuiz div.welcome button.startSportQuiz{
+        padding: 5px 12px;
+        margin-top: 20px;
+    }
+
+
+    section.historyQuiz div.wrap label{
+        margin-top: 20px;
+        width:400px;
+        height: 40px;
+    }
+
+    section.musicQuiz div.wrap label{
+        margin-top: 20px;
+        width:400px;
+        height: 40px;
+    }
+
+    section.sportQuiz div.wrap label{
+        margin-top: 20px;
+        width:400px;
+        height: 40px;
+    }
+
+    section.historyQuiz div.wrap.active button.finish{
+        margin-top:20px;
+        padding: 5px 10px;
+    }
+
+    section.musicQuiz div.wrap.active button.finish{
+        margin-top:20px;
+        padding: 5px 10px;
+    }
+
+    section.sportQuiz div.wrap.active button.finish{
+        margin-top:20px;
+        padding: 5px 10px;
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width:500px){
+
+
+    
+
+    section.historyQuiz div.wrap label{
+        margin-top: 20px;
+        width:300px;
+        height: 30px;
+    }
+
+    section.musicQuiz div.wrap label{
+        margin-top: 20px;
+        width:300px;
+        height: 30px;
+    }
+
+    section.sportQuiz div.wrap label{
+        margin-top: 20px;
+        width:300px;
+        height: 30px;
+    }
+
+    section.historyQuiz div.wrap label input{
+        margin-right: 20px;
+        width:10px;
+        height: 10px;
+    }
+
+    section.musicQuiz div.wrap label input{
+        margin-right: 20px;
+        width:10px;
+        height: 10px;
+    }
+
+    section.sportQuiz div.wrap label input{
+        margin-right: 20px;
+        width:10px;
+        height: 10px;
+    }
+
+}
+
+@media only screen and (max-width:400px){
+
+    section.historyQuiz div.wrap label{
+        font-size: 2rem;
+        margin-top: 20px;
+        width:250px;
+        height: 20px;
+    }
+
+    section.musicQuiz div.wrap label{
+        font-size: 2rem;
+        margin-top: 20px;
+        width:250px;
+        height: 20px;
+    }
+
+    section.sportQuiz div.wrap label{
+        font-size: 2rem;
+        margin-top: 20px;
+        width:250px;
+        height: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width:400px){
+    nav ul li a{
+        font-size: 2.5rem;
+    }
 }
