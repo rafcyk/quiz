@@ -1,67 +1,62 @@
-
 /* <i class="fas fa-chevron-left"></i> */
 /* <i class="fas fa-chevron-right"></i> */
 /* <i class="fas fa-times"></i> */
 
-
-
 /* -----------------------BASIC SETTINGS--------------------------- */
-
-
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: 'PT Sans', sans-serif;
     font-size: 10px;
 }
 
-body{
+body {
     background-color: #fff;
 }
 
-section{
+section {
     border-bottom: 2px solid black;
 }
 
 /* ----------------------HEADER STYLES---------------------------- */
 
-header{
-    width:100%;
+header {
+    width: 100%;
     height: 100vh;
     text-align: center;
     background-color: #000;
 }
 
-header p{
+header p {
     font-size: 70rem;
     line-height: 100vh;
-    color:white;
+    color: white;
 }
 
 /* -------------------NAV STYLES------------------------- */
 
-nav{
-    z-index: 1!important;
-    position:fixed;
-    top:10px;
-    left:50%;
+nav {
+    z-index: 1 !important;
+    position: fixed;
+    top: 10px;
+    left: 50%;
     transform: translateX(-50%);
     mix-blend-mode: difference;
 }
 
-nav ul{
+nav ul {
     list-style: none;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
 }
 
-nav ul li a{
+nav ul li a {
     display: block;
     position: relative;
     font-size: 3rem;
@@ -74,67 +69,67 @@ nav ul li a{
     overflow: hidden;
 }
 
-nav ul li a span{
+nav ul li a span {
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 2px;
     background: #fff;
     bottom: 0;
-    left:-100%;
+    left: -100%;
     transition: .3s;
 }
 
-nav ul li a:hover span{
-    left:0;
+nav ul li a:hover span {
+    left: 0;
 }
 
 /* ---------------------------------------SECTION WITH SPORT QUIZ--------------------------- */
 
-section.sport{
-    width:100%;
+section.sport {
+    width: 100%;
     background-color: #fff;
 }
 
-section.sport div.wrapSport{
+section.sport div.wrapSport {
     margin: 0 auto;
     padding: 100px 0 100px 0;
-    width:80%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-section.sport div.wrapSport div.sign{
+section.sport div.wrapSport div.sign {
     flex-basis: 25%;
     border: 2px solid black;
     padding: 10px;
     border-radius: 10px;
 }
 
-section.sport div.wrapSport div.sign img{
-    width:250px;
+section.sport div.wrapSport div.sign img {
+    width: 250px;
     height: 150px;
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-section.sport div.wrapSport div.description{
+section.sport div.wrapSport div.description {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section.sport div.wrapSport div.description p{
+section.sport div.wrapSport div.description p {
     font-size: 2.5rem;
     text-align: center;
 }
 
-section.sport div.wrapSport div.description button.sportStart{
-    width:150px;
+section.sport div.wrapSport div.description button.sportStart {
+    width: 150px;
     height: 70px;
     font-size: 3rem;
-    color:black;
+    color: black;
     border: 2px solid black;
     background-color: #fff;
     border-radius: 5px;
@@ -143,58 +138,58 @@ section.sport div.wrapSport div.description button.sportStart{
     transition: .2s;
 }
 
-section.sport div.wrapSport div.description button.sportStart:hover{
+section.sport div.wrapSport div.description button.sportStart:hover {
     font-size: 3.8rem;
 }
 
 /* -------------------------------------------------SECTION WITH MUSIC QUIZ-------------------------------- */
 
-section.music{
-    width:100%;
+section.music {
+    width: 100%;
     background-color: #fff;
 }
 
-section.music div.wrapMusic{
+section.music div.wrapMusic {
     margin: 0 auto;
     padding: 100px 0 100px 0;
-    width:80%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-section.music div.wrapMusic div.sign{
+section.music div.wrapMusic div.sign {
     flex-basis: 25%;
     border: 2px solid black;
     padding: 10px;
     border-radius: 10px;
 }
 
-section.music div.wrapMusic div.sign img{
-    width:250px;
+section.music div.wrapMusic div.sign img {
+    width: 250px;
     height: 150px;
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-section.music div.wrapMusic div.description{
+section.music div.wrapMusic div.description {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section.music div.wrapMusic div.description p{
+section.music div.wrapMusic div.description p {
     font-size: 2.5rem;
     text-align: center;
 }
 
-section.music div.wrapMusic div.description button.musicStart{
-    width:150px;
+section.music div.wrapMusic div.description button.musicStart {
+    width: 150px;
     height: 70px;
     font-size: 3rem;
-    color:black;
+    color: black;
     border: 2px solid black;
     background-color: #fff;
     border-radius: 5px;
@@ -203,58 +198,57 @@ section.music div.wrapMusic div.description button.musicStart{
     transition: .2s;
 }
 
-section.music div.wrapMusic div.description button.musicStart:hover{
+section.music div.wrapMusic div.description button.musicStart:hover {
     font-size: 3.8rem;
 }
 
-
 /* ------------------------------SECTION WITH HISTORY QUIZ--------------------------- */
 
-section.history{
-    width:100%;
+section.history {
+    width: 100%;
     background-color: #fff;
 }
 
-section.history div.wrapHistory{
+section.history div.wrapHistory {
     margin: 0 auto;
     padding: 100px 0 100px 0;
-    width:80%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-section.history div.wrapHistory div.sign{
+section.history div.wrapHistory div.sign {
     flex-basis: 25%;
     border: 2px solid black;
     padding: 10px;
     border-radius: 10px;
 }
 
-section.history div.wrapHistory div.sign img{
-    width:250px;
+section.history div.wrapHistory div.sign img {
+    width: 250px;
     height: 150px;
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-section.history div.wrapHistory div.description{
+section.history div.wrapHistory div.description {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section.history div.wrapHistory div.description p{
+section.history div.wrapHistory div.description p {
     font-size: 2.5rem;
     text-align: center;
 }
 
-section.history div.wrapHistory div.description button.historyStart{
-    width:150px;
+section.history div.wrapHistory div.description button.historyStart {
+    width: 150px;
     height: 70px;
     font-size: 3rem;
-    color:black;
+    color: black;
     border: 2px solid black;
     background-color: #fff;
     border-radius: 5px;
@@ -263,38 +257,37 @@ section.history div.wrapHistory div.description button.historyStart{
     transition: .2s;
 }
 
-section.history div.wrapHistory div.description button.historyStart:hover{
+section.history div.wrapHistory div.description button.historyStart:hover {
     font-size: 3.8rem;
 }
 
 /* -----------------------------SPORT QUIZ------------------------ */
 
-section.sportQuiz{
+section.sportQuiz {
     position: fixed;
     width: 100%;
     height: 100vh;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     background-color: #fff;
-    z-index: 3!important;
+    z-index: 3 !important;
     display: block;
 }
 
-section.sportQuiz i:nth-of-type(1){
+section.sportQuiz i:nth-of-type(1) {
     position: absolute;
-    top:5%;
+    top: 5%;
     right: 5%;
     font-size: 6rem;
     cursor: pointer;
     opacity: .5;
     transition: .2s;
-    transform: translate(-5%,-5%);
+    transform: translate(-5%, -5%);
 }
 
-
-section.sportQuiz i:nth-of-type(2){
+section.sportQuiz i:nth-of-type(2) {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 5%;
     transform: translateY(-50%);
     font-size: 5rem;
@@ -303,9 +296,9 @@ section.sportQuiz i:nth-of-type(2){
     transition: .2s;
 }
 
-section.sportQuiz i:nth-of-type(3){
+section.sportQuiz i:nth-of-type(3) {
     position: absolute;
-    top:50%;
+    top: 50%;
     right: 5%;
     transform: translateY(-50%);
     font-size: 5rem;
@@ -314,23 +307,23 @@ section.sportQuiz i:nth-of-type(3){
     transition: .2s;
 }
 
-section.sportQuiz i:hover{
+section.sportQuiz i:hover {
     opacity: 1;
 }
 
-section.sportQuiz div.welcome{
+section.sportQuiz div.welcome {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-section.sportQuiz div.welcome p.welcomeText{
+section.sportQuiz div.welcome p.welcomeText {
     font-size: 3rem;
 }
 
-section.sportQuiz div.welcome button.startSportQuiz{
+section.sportQuiz div.welcome button.startSportQuiz {
     font-size: 3rem;
     padding: 15px 25px;
     border: 2px solid black;
@@ -341,35 +334,33 @@ section.sportQuiz div.welcome button.startSportQuiz{
     transition: .2s;
 }
 
-section.sportQuiz div.welcome button.startSportQuiz:hover{
-    color:white;
+section.sportQuiz div.welcome button.startSportQuiz:hover {
+    color: white;
     background-color: #000;
 }
 
-section.sportQuiz div.wrap{
+section.sportQuiz div.wrap {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     display: flex;
     flex-direction: column;
     display: none;
-
 }
 
-section.sportQuiz div.wrap.active{
+section.sportQuiz div.wrap.active {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section.sportQuiz div.wrap p.question{
+section.sportQuiz div.wrap p.question {
     font-size: 3rem;
-
 }
 
-section.sportQuiz div.wrap label{
+section.sportQuiz div.wrap label {
     margin-top: 30px;
     font-size: 3rem;
     padding: 10px;
@@ -379,20 +370,20 @@ section.sportQuiz div.wrap label{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    width:700px;
+    width: 700px;
     height: 70px;
 }
 
-section.sportQuiz div.wrap label input{
+section.sportQuiz div.wrap label input {
     margin-right: 30px;
-    width:20px;
+    width: 20px;
     height: 20px;
-    border:1px solid black;
+    border: 1px solid black;
     background-color: #fff;
 }
 
-section.sportQuiz div.wrap.active button.finish{
-    margin-top:50px;
+section.sportQuiz div.wrap.active button.finish {
+    margin-top: 50px;
     font-size: 4rem;
     padding: 15px 25px;
     border: 2px solid black;
@@ -402,25 +393,25 @@ section.sportQuiz div.wrap.active button.finish{
     transition: .2s;
 }
 
-section.sportQuiz div.wrap.active button.finish:hover{
+section.sportQuiz div.wrap.active button.finish:hover {
     background-color: #000;
-    color:white;
+    color: white;
 }
 
-section.sportQuiz div.result{
+section.sportQuiz div.result {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-section.sportQuiz div.result p{
+section.sportQuiz div.result p {
     font-size: 4rem;
 }
 
-section.sportQuiz div.result button.endQuiz{
-    margin-top:50px;
+section.sportQuiz div.result button.endQuiz {
+    margin-top: 50px;
     font-size: 5rem;
     padding: 15px 25px;
     border: 2px solid black;
@@ -430,39 +421,39 @@ section.sportQuiz div.result button.endQuiz{
     transition: .2s;
 }
 
-section.sportQuiz div.result button.endQuiz:hover{
+section.sportQuiz div.result button.endQuiz:hover {
     background-color: #000;
-    color:white;
+    color: white;
 }
 
 /* -----------------------------MUSIC QUIZ---------------- */
 
-section.musicQuiz{
+section.musicQuiz {
     position: fixed;
     width: 100%;
     height: 100vh;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     background-color: #fff;
-    z-index: 3!important;
+    z-index: 3 !important;
     display: block;
 }
 
-section.musicQuiz i:nth-of-type(1){
+section.musicQuiz i:nth-of-type(1) {
     position: absolute;
-    top:5%;
+    top: 5%;
     right: 5%;
     font-size: 6rem;
     cursor: pointer;
     opacity: .5;
     transition: .2s;
-    transform: translate(-5%,-5%);
+    transform: translate(-5%, -5%);
 }
 
 
-section.musicQuiz i:nth-of-type(2){
+section.musicQuiz i:nth-of-type(2) {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 5%;
     transform: translateY(-50%);
     font-size: 5rem;
@@ -471,9 +462,9 @@ section.musicQuiz i:nth-of-type(2){
     transition: .2s;
 }
 
-section.musicQuiz i:nth-of-type(3){
+section.musicQuiz i:nth-of-type(3) {
     position: absolute;
-    top:50%;
+    top: 50%;
     right: 5%;
     transform: translateY(-50%);
     font-size: 5rem;
@@ -482,23 +473,23 @@ section.musicQuiz i:nth-of-type(3){
     transition: .2s;
 }
 
-section.musicQuiz i:hover{
+section.musicQuiz i:hover {
     opacity: 1;
 }
 
-section.musicQuiz div.welcome{
+section.musicQuiz div.welcome {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-section.musicQuiz div.welcome p.welcomeText{
+section.musicQuiz div.welcome p.welcomeText {
     font-size: 3rem;
 }
 
-section.musicQuiz div.welcome button.startMusicQuiz{
+section.musicQuiz div.welcome button.startMusicQuiz {
     font-size: 3rem;
     padding: 15px 25px;
     border: 2px solid black;
@@ -509,16 +500,16 @@ section.musicQuiz div.welcome button.startMusicQuiz{
     transition: .2s;
 }
 
-section.musicQuiz div.welcome button.startMusicQuiz:hover{
-    color:white;
+section.musicQuiz div.welcome button.startMusicQuiz:hover {
+    color: white;
     background-color: #000;
 }
 
-section.musicQuiz div.wrap{
+section.musicQuiz div.wrap {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -526,18 +517,17 @@ section.musicQuiz div.wrap{
 
 }
 
-section.musicQuiz div.wrap.active{
+section.musicQuiz div.wrap.active {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section.musicQuiz div.wrap p.question{
+section.musicQuiz div.wrap p.question {
     font-size: 3rem;
-
 }
 
-section.musicQuiz div.wrap label{
+section.musicQuiz div.wrap label {
     margin-top: 30px;
     font-size: 3rem;
     padding: 10px;
@@ -547,20 +537,20 @@ section.musicQuiz div.wrap label{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    width:700px;
+    width: 700px;
     height: 70px;
 }
 
-section.musicQuiz div.wrap label input{
+section.musicQuiz div.wrap label input {
     margin-right: 30px;
-    width:20px;
+    width: 20px;
     height: 20px;
-    border:1px solid black;
+    border: 1px solid black;
     background-color: #fff;
 }
 
-section.musicQuiz div.wrap.active button.finish{
-    margin-top:50px;
+section.musicQuiz div.wrap.active button.finish {
+    margin-top: 50px;
     font-size: 4rem;
     padding: 15px 25px;
     border: 2px solid black;
@@ -570,25 +560,25 @@ section.musicQuiz div.wrap.active button.finish{
     transition: .2s;
 }
 
-section.musicQuiz div.wrap.active button.finish:hover{
+section.musicQuiz div.wrap.active button.finish:hover {
     background-color: #000;
-    color:white;
+    color: white;
 }
 
-section.musicQuiz div.result{
+section.musicQuiz div.result {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-section.musicQuiz div.result p{
+section.musicQuiz div.result p {
     font-size: 4rem;
 }
 
-section.musicQuiz div.result button.endQuiz{
-    margin-top:50px;
+section.musicQuiz div.result button.endQuiz {
+    margin-top: 50px;
     font-size: 5rem;
     padding: 15px 25px;
     border: 2px solid black;
@@ -598,38 +588,38 @@ section.musicQuiz div.result button.endQuiz{
     transition: .2s;
 }
 
-section.musicQuiz div.result button.endQuiz:hover{
+section.musicQuiz div.result button.endQuiz:hover {
     background-color: #000;
-    color:white;
+    color: white;
 }
+
 /* -----------------------------------HISTORY QUIZ------------------------- */
 
-section.historyQuiz{
+section.historyQuiz {
     position: fixed;
     width: 100%;
     height: 100vh;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     background-color: #fff;
-    z-index: 3!important;
+    z-index: 3 !important;
     display: block;
 }
 
-section.historyQuiz i:nth-of-type(1){
+section.historyQuiz i:nth-of-type(1) {
     position: absolute;
-    top:5%;
+    top: 5%;
     right: 5%;
     font-size: 6rem;
     cursor: pointer;
     opacity: .5;
     transition: .2s;
-    transform: translate(-5%,-5%);
+    transform: translate(-5%, -5%);
 }
 
-
-section.historyQuiz i:nth-of-type(2){
+section.historyQuiz i:nth-of-type(2) {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 5%;
     transform: translateY(-50%);
     font-size: 5rem;
@@ -638,9 +628,9 @@ section.historyQuiz i:nth-of-type(2){
     transition: .2s;
 }
 
-section.historyQuiz i:nth-of-type(3){
+section.historyQuiz i:nth-of-type(3) {
     position: absolute;
-    top:50%;
+    top: 50%;
     right: 5%;
     transform: translateY(-50%);
     font-size: 5rem;
@@ -649,23 +639,23 @@ section.historyQuiz i:nth-of-type(3){
     transition: .2s;
 }
 
-section.historyQuiz i:hover{
+section.historyQuiz i:hover {
     opacity: 1;
 }
 
-section.historyQuiz div.welcome{
+section.historyQuiz div.welcome {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-section.historyQuiz div.welcome p.welcomeText{
+section.historyQuiz div.welcome p.welcomeText {
     font-size: 3rem;
 }
 
-section.historyQuiz div.welcome button.startHistoryQuiz{
+section.historyQuiz div.welcome button.startHistoryQuiz {
     font-size: 3rem;
     padding: 15px 25px;
     border: 2px solid black;
@@ -676,34 +666,33 @@ section.historyQuiz div.welcome button.startHistoryQuiz{
     transition: .2s;
 }
 
-section.historyQuiz div.welcome button.startHistoryQuiz:hover{
-    color:white;
+section.historyQuiz div.welcome button.startHistoryQuiz:hover {
+    color: white;
     background-color: #000;
 }
 
-section.historyQuiz div.wrap{
+section.historyQuiz div.wrap {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     display: flex;
     flex-direction: column;
     display: none;
-
 }
 
-section.historyQuiz div.wrap.active{
+section.historyQuiz div.wrap.active {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section.historyQuiz div.wrap p.question{
+section.historyQuiz div.wrap p.question {
     font-size: 3rem;
 }
 
-section.historyQuiz div.wrap label{
+section.historyQuiz div.wrap label {
     margin-top: 30px;
     font-size: 3rem;
     padding: 10px;
@@ -713,20 +702,20 @@ section.historyQuiz div.wrap label{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    width:700px;
+    width: 700px;
     height: 70px;
 }
 
-section.historyQuiz div.wrap label input{
+section.historyQuiz div.wrap label input {
     margin-right: 30px;
-    width:20px;
+    width: 20px;
     height: 20px;
-    border:1px solid black;
+    border: 1px solid black;
     background-color: #fff;
 }
 
-section.historyQuiz div.wrap.active button.finish{
-    margin-top:50px;
+section.historyQuiz div.wrap.active button.finish {
+    margin-top: 50px;
     font-size: 4rem;
     padding: 15px 25px;
     border: 2px solid black;
@@ -736,25 +725,25 @@ section.historyQuiz div.wrap.active button.finish{
     transition: .2s;
 }
 
-section.historyQuiz div.wrap.active button.finish:hover{
+section.historyQuiz div.wrap.active button.finish:hover {
     background-color: #000;
-    color:white;
+    color: white;
 }
 
-section.historyQuiz div.result{
+section.historyQuiz div.result {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-section.historyQuiz div.result p{
+section.historyQuiz div.result p {
     font-size: 4rem;
 }
 
-section.historyQuiz div.result button.endQuiz{
-    margin-top:50px;
+section.historyQuiz div.result button.endQuiz {
+    margin-top: 50px;
     font-size: 5rem;
     padding: 15px 25px;
     border: 2px solid black;
@@ -764,19 +753,18 @@ section.historyQuiz div.result button.endQuiz{
     transition: .2s;
 }
 
-section.historyQuiz div.result button.endQuiz:hover{
+section.historyQuiz div.result button.endQuiz:hover {
     background-color: #000;
-    color:white;
+    color: white;
 }
 
+/* ---------------------FOOTER--------------------- */
 
-/* ---------------------FOOTER--------------------- */  
-
-footer{
-    width:100%;
+footer {
+    width: 100%;
     height: 30px;
     background-color: #000;
-    color:white;
+    color: white;
     font-size: 1.5rem;
     text-align: center;
     line-height: 30px;
@@ -785,177 +773,123 @@ footer{
 
 /* ----------------------MEDIA QUERIES------------------- */
 
-@media only screen and (max-width:1200px){
-    html{
+@media only screen and (max-width:1200px) {
+    html {
         font-size: 9px;
     }
 }
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1000px) {
 
-    html{
+    html {
         font-size: 8px;
     }
 
-    section.historyQuiz div.wrap label{
+    section.historyQuiz div.wrap label {
         margin-top: 30px;
-        font-size: 3rem;
         padding: 15px;
-        border: 2px solid black;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        width:600px;
+        width: 600px;
         height: 65px;
     }
 
-    section.musicQuiz div.wrap label{
+    section.musicQuiz div.wrap label {
         margin-top: 30px;
-        font-size: 3rem;
         padding: 15px;
-        border: 2px solid black;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        width:600px;
+        width: 600px;
         height: 65px;
     }
 
-    section.sportQuiz div.wrap label{
+    section.sportQuiz div.wrap label {
         margin-top: 30px;
-        font-size: 3rem;
         padding: 15px;
-        border: 2px solid black;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        width:600px;
+        width: 600px;
         height: 65px;
     }
 
 
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:800px) {
 
-    html{
+    html {
         font-size: 7px;
     }
 
-    
-    section.history div.wrapHistory div.sign{
-        flex-basis: 25%;
-        border: 2px solid black;
-        padding: 10px;
-        border-radius: 10px;
-    }
-    
-    section.history div.wrapHistory div.sign img{
-        width:200px;
+    section.history div.wrapHistory div.sign img {
+        width: 200px;
         height: 120px;
-        display: block;
-        margin:0 auto;
     }
-    
-    
-    
-    section.history div.wrapHistory div.description button.historyStart{
-        width:100px;
+
+    section.history div.wrapHistory div.description button.historyStart {
+        width: 100px;
         height: 50px;
     }
 
-    section.music div.wrapMusic div.sign{
-        flex-basis: 25%;
-        border: 2px solid black;
-        padding: 10px;
-        border-radius: 10px;
-    }
-    
-    section.music div.wrapMusic div.sign img{
-        width:200px;
+
+    section.music div.wrapMusic div.sign img {
+        width: 200px;
         height: 120px;
-        display: block;
-        margin:0 auto;
     }
-    
-    
-    
-    section.music div.wrapMusic div.description button.musicStart{
-        width:100px;
+
+    section.music div.wrapMusic div.description button.musicStart {
+        width: 100px;
         height: 50px;
     }
 
-    section.sport div.wrapSportsport div.sign{
-        flex-basis: 25%;
-        border: 2px solid black;
-        padding: 10px;
-        border-radius: 10px;
-    }
-    
-    section.sport div.wrapSportsport div.sign img{
-        width:200px;
+    section.sport div.wrapSport div.sign img {
+        width: 200px;
         height: 120px;
-        display: block;
-        margin:0 auto;
     }
-    
-    
-    
-    section.sport div.wrapSport div.description button.sportStart{
-        width:100px;
+
+    section.sport div.wrapSport div.description button.sportStart {
+        width: 100px;
         height: 50px;
     }
 
-    section.historyQuiz div.wrap label{
-        width:500px;
+    section.historyQuiz div.wrap label {
+        width: 500px;
         height: 50px;
     }
 
-    section.musicQuiz div.wrap label{
-        width:500px;
+    section.musicQuiz div.wrap label {
+        width: 500px;
         height: 50px;
     }
 
-    section.sportQuiz div.wrap label{
-        width:500px;
+    section.sportQuiz div.wrap label {
+        width: 500px;
         height: 50px;
     }
 
-    section.historyQuiz div.wrap.active button.finish{
-        margin-top:30px;
+    section.historyQuiz div.wrap.active button.finish {
+        margin-top: 30px;
         padding: 10px 20px;
     }
 
-    section.musicQuiz div.wrap.active button.finish{
-        margin-top:30px;
+    section.musicQuiz div.wrap.active button.finish {
+        margin-top: 30px;
         padding: 10px 20px;
     }
 
-    section.sportQuiz div.wrap.active button.finish{
-        margin-top:30px;
+    section.sportQuiz div.wrap.active button.finish {
+        margin-top: 30px;
         padding: 10px 20px;
     }
 
-    section.historyQuiz div.result button.endQuiz{
-        margin-top:30px;
+    section.historyQuiz div.result button.endQuiz {
+        margin-top: 30px;
         padding: 10px 20px;
         font-size: 4rem;
     }
 
-    section.musicQuiz div.result button.endQuiz{
-        margin-top:30px;
+    section.musicQuiz div.result button.endQuiz {
+        margin-top: 30px;
         padding: 10px 20px;
         font-size: 4rem;
     }
 
-    section.sportQuiz div.result button.endQuiz{
-        margin-top:30px;
+    section.sportQuiz div.result button.endQuiz {
+        margin-top: 30px;
         padding: 10px 20px;
         font-size: 4rem;
     }
@@ -963,322 +897,287 @@ footer{
 }
 
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:700px) {
 
-    html{
+    html {
         font-size: 7px;
     }
 
-    header p{
+    header p {
         font-size: 55rem;
     }
 
-    
-
-    
-    section.history div.wrapHistory div.sign img{
-        width:150px;
+    section.history div.wrapHistory div.sign img {
+        width: 150px;
         height: 80px;
-        display: block;
-        margin:0 auto;
     }
-    
-    
-    
-    section.history div.wrapHistory div.description button.historyStart{
-        width:100px;
+
+    section.history div.wrapHistory div.description button.historyStart {
+        width: 100px;
         height: 50px;
     }
 
-    section.music div.wrapMusic div.sign img{
-        width:150px;
+    section.music div.wrapMusic div.sign img {
+        width: 150px;
         height: 80px;
-        display: block;
-        margin:0 auto;
     }
-    
-    
-    
-    section.music div.wrapMusic div.description button.musicStart{
-        width:100px;
+
+    section.music div.wrapMusic div.description button.musicStart {
+        width: 100px;
         height: 50px;
     }
-    
-    section.sport div.wrapSport div.sign img{
-        width:150px;
+
+    section.sport div.wrapSport div.sign img {
+        width: 150px;
         height: 80px;
-        display: block;
-        margin:0 auto;
     }
-    
-    
-    
-    section.sport div.wrapSport div.description button.sportStart{
-        width:100px;
+
+    section.sport div.wrapSport div.description button.sportStart {
+        width: 100px;
         height: 50px;
     }
 
-    section.historyQuiz div.wrap label{
-        width:500px;
+    section.historyQuiz div.wrap label {
+        width: 500px;
         height: 50px;
     }
 
-    section.musicQuiz div.wrap label{
-        width:500px;
+    section.musicQuiz div.wrap label {
+        width: 500px;
         height: 50px;
     }
 
-    section.sportQuiz div.wrap label{
-        width:500px;
+    section.sportQuiz div.wrap label {
+        width: 500px;
         height: 50px;
     }
 
-    section.historyQuiz div.wrap.active button.finish{
-        margin-top:30px;
+    section.historyQuiz div.wrap.active button.finish {
+        margin-top: 30px;
         padding: 5px 10px;
     }
 
-    section.musicQuiz div.wrap.active button.finish{
-        margin-top:30px;
+    section.musicQuiz div.wrap.active button.finish {
+        margin-top: 30px;
         padding: 5px 10px;
     }
 
-    section.sportQuiz div.wrap.active button.finish{
-        margin-top:30px;
+    section.sportQuiz div.wrap.active button.finish {
+        margin-top: 30px;
         padding: 5px 10px;
     }
 
-    section.historyQuiz div.result button.endQuiz{
-        margin-top:30px;
+    section.historyQuiz div.result button.endQuiz {
+        margin-top: 30px;
         padding: 10px 20px;
         font-size: 4rem;
     }
 
-    section.musicQuiz div.result button.endQuiz{
-        margin-top:30px;
+    section.musicQuiz div.result button.endQuiz {
+        margin-top: 30px;
         padding: 10px 20px;
         font-size: 4rem;
     }
 
-    section.sportQuiz div.result button.endQuiz{
-        margin-top:30px;
+    section.sportQuiz div.result button.endQuiz {
+        margin-top: 30px;
         padding: 10px 20px;
         font-size: 4rem;
     }
 
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
 
-    html{
+    html {
         font-size: 6px;
     }
 
-    header p{
+    header p {
         font-size: 50rem;
     }
 
-    section.history div.wrapHistory{
+    section.history div.wrapHistory {
         margin: 0 auto;
         padding: 50px 0 50px 0;
-        width:80%;
+        width: 80%;
         flex-direction: column;
     }
 
-    section.history div.wrapHistory div.sign{
+    section.history div.wrapHistory div.sign {
         margin-bottom: 30px;
     }
-    
-    
-    section.history div.wrapHistory div.sign img{
-        width:150px;
+
+    section.history div.wrapHistory div.sign img {
+        width: 150px;
         height: 70px;
     }
-    
-    
-    
-    section.history div.wrapHistory div.description button.historyStart{
-        width:100px;
+
+    section.history div.wrapHistory div.description button.historyStart {
+        width: 100px;
         height: 40px;
         margin-top: 30px;
     }
 
-    section.music div.wrapMusic{
+    section.music div.wrapMusic {
         padding: 50px 0 50px 0;
         flex-direction: column-reverse;
     }
 
-    section.music div.wrapMusic div.sign{
+    section.music div.wrapMusic div.sign {
         margin-bottom: 30px;
     }
-    
-    
-    section.music div.wrapMusic div.sign img{
-        width:150px;
+
+    section.music div.wrapMusic div.sign img {
+        width: 150px;
         height: 70px;
     }
-    
-    
-    
-    section.music div.wrapMusic div.description button.musicStart{
-        width:100px;
+
+    section.music div.wrapMusic div.description button.musicStart {
+        width: 100px;
         height: 40px;
         margin-top: 30px;
     }
 
-
-    section.sport div.wrapSport{
+    section.sport div.wrapSport {
         margin: 0 auto;
         padding: 50px 0 50px 0;
-        width:80%;
+        width: 80%;
         flex-direction: column;
     }
 
-    section.sport div.wrapSport div.sign{
+    section.sport div.wrapSport div.sign {
         margin-bottom: 30px;
     }
-    
-    
-    section.sport div.wrapSport div.sign img{
-        width:150px;
+
+    section.sport div.wrapSport div.sign img {
+        width: 150px;
         height: 70px;
     }
-    
-    
-    
-    
-    section.sport div.wrapSport div.description button.sportStart{
-        width:100px;
+
+    section.sport div.wrapSport div.description button.sportStart {
+        width: 100px;
         height: 40px;
         margin-top: 30px;
     }
 
-    section.historyQuiz div.welcome button.startHistoryQuiz{
+    section.historyQuiz div.welcome button.startHistoryQuiz {
         padding: 5px 12px;
         margin-top: 20px;
     }
 
-    section.musicQuiz div.welcome button.startMusicQuiz{
+    section.musicQuiz div.welcome button.startMusicQuiz {
         padding: 5px 12px;
         margin-top: 20px;
     }
 
-    section.sportQuiz div.welcome button.startSportQuiz{
+    section.sportQuiz div.welcome button.startSportQuiz {
         padding: 5px 12px;
         margin-top: 20px;
     }
 
-
-    section.historyQuiz div.wrap label{
+    section.historyQuiz div.wrap label {
         margin-top: 20px;
-        width:400px;
+        width: 400px;
         height: 40px;
     }
 
-    section.musicQuiz div.wrap label{
+    section.musicQuiz div.wrap label {
         margin-top: 20px;
-        width:400px;
+        width: 400px;
         height: 40px;
     }
 
-    section.sportQuiz div.wrap label{
+    section.sportQuiz div.wrap label {
         margin-top: 20px;
-        width:400px;
+        width: 400px;
         height: 40px;
     }
 
-    section.historyQuiz div.wrap.active button.finish{
-        margin-top:20px;
+    section.historyQuiz div.wrap.active button.finish {
+        margin-top: 20px;
         padding: 5px 10px;
     }
 
-    section.musicQuiz div.wrap.active button.finish{
-        margin-top:20px;
+    section.musicQuiz div.wrap.active button.finish {
+        margin-top: 20px;
         padding: 5px 10px;
     }
 
-    section.sportQuiz div.wrap.active button.finish{
-        margin-top:20px;
+    section.sportQuiz div.wrap.active button.finish {
+        margin-top: 20px;
         padding: 5px 10px;
     }
-
 
 }
 
+@media only screen and (max-width:500px) {
 
-
-
-@media only screen and (max-width:500px){
-
-
-    
-
-    section.historyQuiz div.wrap label{
+    section.historyQuiz div.wrap label {
         margin-top: 20px;
-        width:300px;
+        width: 300px;
         height: 30px;
     }
 
-    section.musicQuiz div.wrap label{
+    section.musicQuiz div.wrap label {
         margin-top: 20px;
-        width:300px;
+        width: 300px;
         height: 30px;
     }
 
-    section.sportQuiz div.wrap label{
+    section.sportQuiz div.wrap label {
         margin-top: 20px;
-        width:300px;
+        width: 300px;
         height: 30px;
     }
 
-    section.historyQuiz div.wrap label input{
+    section.historyQuiz div.wrap label input {
         margin-right: 20px;
-        width:10px;
+        width: 10px;
         height: 10px;
     }
 
-    section.musicQuiz div.wrap label input{
+    section.musicQuiz div.wrap label input {
         margin-right: 20px;
-        width:10px;
+        width: 10px;
         height: 10px;
     }
 
-    section.sportQuiz div.wrap label input{
+    section.sportQuiz div.wrap label input {
         margin-right: 20px;
-        width:10px;
+        width: 10px;
         height: 10px;
     }
 
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:400px) {
 
-    section.historyQuiz div.wrap label{
+    section.historyQuiz div.wrap label {
         font-size: 3rem;
         margin-top: 20px;
-        width:250px;
+        width: 250px;
         height: 20px;
     }
 
-    section.musicQuiz div.wrap label{
+    section.musicQuiz div.wrap label {
         font-size: 3rem;
         margin-top: 20px;
-        width:250px;
+        width: 250px;
         height: 20px;
     }
 
-    section.sportQuiz div.wrap label{
+    section.sportQuiz div.wrap label {
         font-size: 3rem;
         margin-top: 20px;
-        width:250px;
+        width: 250px;
         height: 20px;
     }
 
 }
 
-
-@media only screen and (max-width:400px){
-    nav ul li a{
+@media only screen and (max-width:400px) {
+    nav ul li a {
         font-size: 2.5rem;
     }
 }
