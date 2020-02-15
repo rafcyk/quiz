@@ -15,74 +15,74 @@ nav.addEventListener('click', () => {
 //Array for sport quiz with questions and answers
 
 const sportQuestions = [{
-        question: 'Jak nazywa się najlepszy polski zawodnik grający w Bayernie Monachium?',
-        firstOption: 'Akradiusz Milik',
-        secondOption: 'Robert Lewandowski',
-        thirdOption: 'Zbigniew Boniek'
-    },
+    question: 'Jak nazywa się najlepszy polski zawodnik grający w Bayernie Monachium?',
+    firstOption: 'Akradiusz Milik',
+    secondOption: 'Robert Lewandowski',
+    thirdOption: 'Zbigniew Boniek'
+},
 
-    {
-        question: 'Kto wygrał Mistrzostwa Świata w piłce nożnej w 2010 roku?',
-        firstOption: 'Anglia',
-        secondOption: 'Francja',
-        thirdOption: 'Hiszpania'
-    },
+{
+    question: 'Kto wygrał Mistrzostwa Świata w piłce nożnej w 2010 roku?',
+    firstOption: 'Anglia',
+    secondOption: 'Francja',
+    thirdOption: 'Hiszpania'
+},
 
-    {
-        question: 'Jedyny Polak w Formule 1 to:',
-        firstOption: 'Robert Kubica',
-        secondOption: 'Krzysztof Hołowczyc',
-        thirdOption: 'Adam Małysz'
-    },
+{
+    question: 'Jedyny Polak w Formule 1 to:',
+    firstOption: 'Robert Kubica',
+    secondOption: 'Krzysztof Hołowczyc',
+    thirdOption: 'Adam Małysz'
+},
 
-    {
-        question: 'Następca Adama Małysza to:',
-        firstOption: 'Dawid Kubacki',
-        secondOption: 'Kamil Stoch',
-        thirdOption: 'Piotr Żyła'
-    },
+{
+    question: 'Następca Adama Małysza to:',
+    firstOption: 'Dawid Kubacki',
+    secondOption: 'Kamil Stoch',
+    thirdOption: 'Piotr Żyła'
+},
 
-    {
-        question: 'Jeden z najlepszych byłych koszykarzy to: ',
-        firstOption: 'Marcin Skoczylas',
-        secondOption: 'Michael Jordan',
-        thirdOption: 'Marcin Gortat'
-    },
+{
+    question: 'Jeden z najlepszych byłych koszykarzy to: ',
+    firstOption: 'Marcin Skoczylas',
+    secondOption: 'Michael Jordan',
+    thirdOption: 'Marcin Gortat'
+},
 
-    {
-        question: 'Justyna Kowalczyk to słynna polska: ',
-        firstOption: 'pływaczka',
-        secondOption: 'piłkarka',
-        thirdOption: 'narciarka'
-    },
+{
+    question: 'Justyna Kowalczyk to słynna polska: ',
+    firstOption: 'pływaczka',
+    secondOption: 'piłkarka',
+    thirdOption: 'narciarka'
+},
 
-    {
-        question: 'Jeden z najlepszych polskich atakujących siatkarzy: ',
-        firstOption: 'Marcin Możdżonek',
-        secondOption: 'Mateusz Bieniek',
-        thirdOption: 'Bartosz Kurek'
-    },
+{
+    question: 'Jeden z najlepszych polskich atakujących siatkarzy: ',
+    firstOption: 'Marcin Możdżonek',
+    secondOption: 'Mateusz Bieniek',
+    thirdOption: 'Bartosz Kurek'
+},
 
-    {
-        question: 'Jeden z najlepszych polskich atakujących siatkarzy: ',
-        firstOption: 'Marcin Możdżonek',
-        secondOption: 'Mateusz Bieniek',
-        thirdOption: 'Bartosz Kurek'
-    },
+{
+    question: 'Jeden z najlepszych polskich atakujących siatkarzy: ',
+    firstOption: 'Marcin Możdżonek',
+    secondOption: 'Mateusz Bieniek',
+    thirdOption: 'Bartosz Kurek'
+},
 
-    {
-        question: 'Rekordzista w biegu na 100m. : ',
-        firstOption: 'Usain Bolt',
-        secondOption: 'Bogdan Wenta',
-        thirdOption: 'Jerzy Janowicz'
-    },
+{
+    question: 'Rekordzista w biegu na 100m. : ',
+    firstOption: 'Usain Bolt',
+    secondOption: 'Bogdan Wenta',
+    thirdOption: 'Jerzy Janowicz'
+},
 
-    {
-        question: 'Mike Tyson był: ',
-        firstOption: 'skoczkiem',
-        secondOption: 'bokserem',
-        thirdOption: 'piłkarzem'
-    }
+{
+    question: 'Mike Tyson był: ',
+    firstOption: 'skoczkiem',
+    secondOption: 'bokserem',
+    thirdOption: 'piłkarzem'
+}
 ]
 
 const welcomeSport = 'Witaj w świecie sportu! Mam nadzieję że uda Ci się rozwiązać wszystkie zagadki postawione przed Tobą. Quiz składa się z 10 pytań. Wyświetlą się trzy odpowiedzi. Tylko jedna jest poprawna. Powodzenia!';
@@ -185,6 +185,30 @@ const sportQuizFn = () => {
             divWrapsArray.push(divWrap);
         }
 
+
+        const inputs = [...document.querySelectorAll('section.sportQuiz div.wrap label input')];
+
+        inputs.forEach(input => {
+
+            input.addEventListener('change', () => {
+
+                inputs.forEach(inp => {
+                    inp.parentElement.style.border = "2px solid black";
+                })
+
+
+                if (input.checked) {
+                    inputs.forEach(inp => {
+                        if (inp.checked) {
+                            inp.parentElement.style.border = "2px solid green";
+                        }
+                    })
+                }
+
+            })
+        })
+
+
         divWrapsArray[0].classList.add('active'); //first element attribute
 
         let questionNumber = 0;
@@ -204,6 +228,8 @@ const sportQuizFn = () => {
         if (questionNumber == 0) {
             crossLeft.style.pointerEvents = 'none';
         }
+
+
 
 
         //function to change question to right
@@ -249,6 +275,7 @@ const sportQuizFn = () => {
         const finishBtn = document.createElement('button');
         finishBtn.className = 'finish';
         finishBtn.textContent = 'Zakończ';
+
 
 
 
@@ -416,74 +443,74 @@ btnStartSportQuiz.addEventListener('click', sportQuizFn);
 //--------------------------------Music quiz---------------------
 
 const musicQuestions = [{
-        question: 'Biały ciałem, czarny duszą to: ',
-        firstOption: 'O.S.T.R.',
-        secondOption: 'Eminem',
-        thirdOption: 'Adi Nowak'
-    },
+    question: 'Biały ciałem, czarny duszą to: ',
+    firstOption: 'O.S.T.R.',
+    secondOption: 'Eminem',
+    thirdOption: 'Adi Nowak'
+},
 
-    {
-        question: 'Skład, w którym rapował magik to: ',
-        firstOption: 'Paktofonika',
-        secondOption: 'WWO',
-        thirdOption: 'Flexxip'
-    },
+{
+    question: 'Skład, w którym rapował magik to: ',
+    firstOption: 'Paktofonika',
+    secondOption: 'WWO',
+    thirdOption: 'Flexxip'
+},
 
-    {
-        question: 'Zbigniew Wodecki grał na:',
-        firstOption: 'perkusji',
-        secondOption: 'harfie',
-        thirdOption: 'trąbce'
-    },
+{
+    question: 'Zbigniew Wodecki grał na:',
+    firstOption: 'perkusji',
+    secondOption: 'harfie',
+    thirdOption: 'trąbce'
+},
 
-    {
-        question: 'Jedna z najbardziej rozpoznawalnych piosenek Czesława Niemena to:',
-        firstOption: 'Nie dokazuj',
-        secondOption: 'Lubiła tańczyć',
-        thirdOption: 'Dziwny jest ten świat'
-    },
+{
+    question: 'Jedna z najbardziej rozpoznawalnych piosenek Czesława Niemena to:',
+    firstOption: 'Nie dokazuj',
+    secondOption: 'Lubiła tańczyć',
+    thirdOption: 'Dziwny jest ten świat'
+},
 
-    {
-        question: 'Piosenkę perfect Ed Sheeran wykoał wraz z: ',
-        firstOption: 'Eminemem',
-        secondOption: 'Andreą Bocellim',
-        thirdOption: 'Arianą Grandę'
-    },
+{
+    question: 'Piosenkę perfect Ed Sheeran wykoał wraz z: ',
+    firstOption: 'Eminemem',
+    secondOption: 'Andreą Bocellim',
+    thirdOption: 'Arianą Grandę'
+},
 
-    {
-        question: 'Piosenka "No roots" jest wykonywana przez: ',
-        firstOption: 'Alice Merton',
-        secondOption: 'Bellie Elish',
-        thirdOption: 'Perfect'
-    },
+{
+    question: 'Piosenka "No roots" jest wykonywana przez: ',
+    firstOption: 'Alice Merton',
+    secondOption: 'Bellie Elish',
+    thirdOption: 'Perfect'
+},
 
-    {
-        question: 'Saksofon jest instrumentem: ',
-        firstOption: 'perkusyjnym',
-        secondOption: 'dętym',
-        thirdOption: 'smyczkowym'
-    },
+{
+    question: 'Saksofon jest instrumentem: ',
+    firstOption: 'perkusyjnym',
+    secondOption: 'dętym',
+    thirdOption: 'smyczkowym'
+},
 
-    {
-        question: 'Najbardziej znany producent skrzypiec to: ',
-        firstOption: 'Stradivarius',
-        secondOption: 'Yamaha',
-        thirdOption: 'Sony'
-    },
+{
+    question: 'Najbardziej znany producent skrzypiec to: ',
+    firstOption: 'Stradivarius',
+    secondOption: 'Yamaha',
+    thirdOption: 'Sony'
+},
 
-    {
-        question: 'Zespół, w którym spiewa Kazik to: ',
-        firstOption: 'Rotary',
-        secondOption: 'Budka Suflera',
-        thirdOption: 'Kult'
-    },
+{
+    question: 'Zespół, w którym spiewa Kazik to: ',
+    firstOption: 'Rotary',
+    secondOption: 'Budka Suflera',
+    thirdOption: 'Kult'
+},
 
-    {
-        question: 'Najbardziej znanym polskim wykonawcą disco polo jest: ',
-        firstOption: 'Sylwia Grzeszczak',
-        secondOption: 'Power Play',
-        thirdOption: 'Zenek Martyniuk'
-    }
+{
+    question: 'Najbardziej znanym polskim wykonawcą disco polo jest: ',
+    firstOption: 'Sylwia Grzeszczak',
+    secondOption: 'Power Play',
+    thirdOption: 'Zenek Martyniuk'
+}
 ]
 
 const btnStartMusicQuiz = document.querySelector('.music .wrapMusic .description .musicStart');
@@ -585,6 +612,28 @@ const musicQuizFn = () => {
             answerNumber++;
             divWrapsArray.push(divWrap);
         }
+
+        const inputs = [...document.querySelectorAll('section.musicQuiz div.wrap label input')];
+
+        inputs.forEach(input => {
+
+            input.addEventListener('change', () => {
+
+                inputs.forEach(inp => {
+                    inp.parentElement.style.border = "2px solid black";
+                })
+
+
+                if (input.checked) {
+                    inputs.forEach(inp => {
+                        if (inp.checked) {
+                            inp.parentElement.style.border = "2px solid green";
+                        }
+                    })
+                }
+
+            })
+        })
 
         divWrapsArray[0].classList.add('active'); //first element attribute
 
@@ -810,74 +859,74 @@ btnStartMusicQuiz.addEventListener('click', musicQuizFn);
 //-----------------HISTORY QUIZ--------------------------
 
 const historyQuestions = [{
-        question: 'Pierwszy król Polski to: ',
-        firstOption: 'Kazimierz Wielki',
-        secondOption: 'Bolesław Chrobry',
-        thirdOption: 'Andrzej Duda'
-    },
+    question: 'Pierwszy król Polski to: ',
+    firstOption: 'Kazimierz Wielki',
+    secondOption: 'Bolesław Chrobry',
+    thirdOption: 'Andrzej Duda'
+},
 
-    {
-        question: 'Pierwsza stolica Polski to: ',
-        firstOption: 'Gniezno',
-        secondOption: 'Łomża',
-        thirdOption: 'Warszawa'
-    },
+{
+    question: 'Pierwsza stolica Polski to: ',
+    firstOption: 'Gniezno',
+    secondOption: 'Łomża',
+    thirdOption: 'Warszawa'
+},
 
-    {
-        question: 'W którym roku odbyła się bitwa pod Grunwaldem:',
-        firstOption: '1410',
-        secondOption: '1521',
-        thirdOption: '1411'
-    },
+{
+    question: 'W którym roku odbyła się bitwa pod Grunwaldem:',
+    firstOption: '1410',
+    secondOption: '1521',
+    thirdOption: '1411'
+},
 
-    {
-        question: 'Pogromca Turków spod Wiednia to:',
-        firstOption: 'Adam Małysz',
-        secondOption: 'Kazimierz Jagiellończyk',
-        thirdOption: 'Jan Sobieski'
-    },
+{
+    question: 'Pogromca Turków spod Wiednia to:',
+    firstOption: 'Adam Małysz',
+    secondOption: 'Kazimierz Jagiellończyk',
+    thirdOption: 'Jan Sobieski'
+},
 
-    {
-        question: 'Chrzest Polski odbył się w roku: ',
-        firstOption: '969',
-        secondOption: '1210',
-        thirdOption: '966'
-    },
+{
+    question: 'Chrzest Polski odbył się w roku: ',
+    firstOption: '969',
+    secondOption: '1210',
+    thirdOption: '966'
+},
 
-    {
-        question: 'Zastał Polskę drewnianą, zostawił murowaną: ',
-        firstOption: 'Mieszko I',
-        secondOption: 'Kazimierz Wielki',
-        thirdOption: 'Stanisław August'
-    },
+{
+    question: 'Zastał Polskę drewnianą, zostawił murowaną: ',
+    firstOption: 'Mieszko I',
+    secondOption: 'Kazimierz Wielki',
+    thirdOption: 'Stanisław August'
+},
 
-    {
-        question: 'Utworzył Księstwo Warszawskie: ',
-        firstOption: 'Stanisław Żółkiewski',
-        secondOption: 'Napoleon Bonaparte',
-        thirdOption: 'Józef Piłsudski'
-    },
+{
+    question: 'Utworzył Księstwo Warszawskie: ',
+    firstOption: 'Stanisław Żółkiewski',
+    secondOption: 'Napoleon Bonaparte',
+    thirdOption: 'Józef Piłsudski'
+},
 
-    {
-        question: 'Zaborcy Polski to Prusy, Rosja i: ',
-        firstOption: 'Austria',
-        secondOption: 'Francja',
-        thirdOption: 'Turcja'
-    },
+{
+    question: 'Zaborcy Polski to Prusy, Rosja i: ',
+    firstOption: 'Austria',
+    secondOption: 'Francja',
+    thirdOption: 'Turcja'
+},
 
-    {
-        question: 'Bitwa w czasie II wojny światowej, o której śpiewa zespół Sabaton odbyła się pod: ',
-        firstOption: 'Wizną',
-        secondOption: 'Ostrołęką',
-        thirdOption: 'Lublinem'
-    },
+{
+    question: 'Bitwa w czasie II wojny światowej, o której śpiewa zespół Sabaton odbyła się pod: ',
+    firstOption: 'Wizną',
+    secondOption: 'Ostrołęką',
+    thirdOption: 'Lublinem'
+},
 
-    {
-        question: 'Polska odzyskała niepodległość w roku: ',
-        firstOption: '1900',
-        secondOption: '1918',
-        thirdOption: '1920'
-    }
+{
+    question: 'Polska odzyskała niepodległość w roku: ',
+    firstOption: '1900',
+    secondOption: '1918',
+    thirdOption: '1920'
+}
 ]
 
 const btnStartHistoryQuiz = document.querySelector('.history .wrapHistory .description .historyStart');
@@ -978,6 +1027,28 @@ const historyQuizFn = () => {
             answerNumber++;
             divWrapsArray.push(divWrap);
         }
+
+        const inputs = [...document.querySelectorAll('section.historyQuiz div.wrap label input')];
+
+        inputs.forEach(input => {
+
+            input.addEventListener('change', () => {
+
+                inputs.forEach(inp => {
+                    inp.parentElement.style.border = "2px solid black";
+                })
+
+
+                if (input.checked) {
+                    inputs.forEach(inp => {
+                        if (inp.checked) {
+                            inp.parentElement.style.border = "2px solid green";
+                        }
+                    })
+                }
+
+            })
+        })
 
         divWrapsArray[0].classList.add('active'); //first element attribute
 
